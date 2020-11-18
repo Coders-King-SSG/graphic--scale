@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Scale</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="https://www.w3schools.com/colors/img_colormap.gif" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<center>
+
+    <body align="center">
+        <h1 style="display: inline-block;">Graphics Scale</h1> <i class="fas fa-paint-brush"
+            style="font-size: larger!important;"></i>
+        <br>
+        <b>Go round</b> <kbd>circles!</kbd><br><br>
+        <canvas id="canvas" height="500" width="700"></canvas>
+        <div id="settings">
+            <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><u>Settings:-</u></h2>
+            <pre>Width of the Line:</pre>
+            <input value="2" class="form-control" type="number" placeholder="Enter Width of the line" id="width">
+            <caption>/</caption><br><br>
+            <kbd>Shift and '+'</kbd>
+            <caption>or</caption>
+            <kbd>Shift and '-'</kbd>
+            <br><br><br>
+            <pre>Radius:</pre>
+            <input type="number" class="form-control" placeholder="Enter Radius" id="radius" value="40">
+            <caption>/</caption><br><br>
+            <kbd>Ctrl and '+'</kbd>
+            <caption>or</caption>
+            <kbd>Ctrl and '-'</kbd>
+            <br><br><br>
+            <pre>Color:</pre>
+            <button class="btn btn-success" data-toggle="modal" data-target="#choosecolor">Input your color</button>
+            <div class="modal fade" id="choosecolor">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="header">
+                            <button class="close" type="button" data-dismiss="modal">&timesbar;</button>
+                            <h4 class="modal-title">Choose Color
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <center>
+                            <pre>Red:</pre>
+                            <input type="range" id="red" value="0" min="0" max="255"><br>
+                            <pre>Green:</pre>
+                            <input type="range" id="green" value="0" min="0" max="255"><br>
+                            <pre>Blue:</pre>
+                            <input type="range" id="blue" value="0" min="0" max="255"><br>
+                            <div id="color"></div>
+                            or <br>
+                            <pre>Hexadecimal Code:</pre>
+                            <input type="text" class="form-control" id="hex">
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</center>
+
+</html>
